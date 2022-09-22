@@ -1,0 +1,266 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+height: 100vh;
+width: 100vw;
+}
+/* CUERPO */
+.grid-contenedor {
+    height: 100vh;
+    width: 99vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.5fr 7fr 1.5fr;
+    grid-template-areas: "header"
+                         "main"
+                         "footer";
+
+}
+/* HEADER */
+header {
+    grid-area: "header";
+    background-image: url(../assets/images/fondo\ de\ pantalla\ footer.jpg);
+}
+
+.nav {
+    display: flex;
+    height: 15vh;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.imagenheader {
+    width: 15vw;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+nav div a img {
+    height: 8vh;
+    flex-wrap: wrap;
+    
+}
+nav ul {
+margin-right: 50px;
+width: 50vw;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+align-content: center;
+justify-content: space-between;
+font-size: 23px;
+
+}
+nav ul li {
+    list-style: none;
+   
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(249, 237, 31);
+}
+
+
+/* MAIN */
+main  {
+    grid-area: "main";
+    border: 1px solid   black;
+    display: grid;
+    grid-column: 1fr 1fr;
+    grid-template-rows: 0.7fr 1fr 1fr .5fr;
+    grid-template-areas: "tit tit"
+                         "sec1 sec2"
+                         "as as"
+                         "imin imin";
+    background-image: url(../assets/images/fondo_panta_inicio_amaillo.jpg);
+    background-size: contain;
+    
+    
+}
+.titulo {
+    grid-area: tit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: rgb(249, 237, 31);
+    font-size: 40px;
+    
+    
+
+}
+.section1 {
+    grid-area: sec1;
+    margin-left: 50px;
+    margin-right: 25px;
+    font-size: 30px;
+    color: rgb(249, 237, 31);
+    
+    
+
+}
+.section2 {
+    grid-area: sec2;
+    margin-right: 50px;
+    margin-left: 25px;
+    font-size: 30px;
+    color: rgb(249, 237, 31);
+    
+    
+}
+.aside {
+    grid-area: as;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 25px;
+    color: white;
+    font-style: italic;
+    
+}
+.imginicio {
+    grid-area: imin;
+    width: 400px;
+}
+
+/* FOOTER */
+
+footer {
+    grid-area: "footer";
+    background-color: rgb(28, 27, 27);
+    height: 12vh;
+    border-top: 5px black   solid;
+}
+
+.logofooter {
+    height: 50px;
+}
+
+.imgfooter {
+    width: 30px;
+    margin: 10px;
+}
+.contenedor-foot{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-evenly;
+    height: 12vh;
+    
+}
+.contenedor-foot__iconos {
+    order:3;
+    display: flex;
+    flex-wrap: wrap;
+    width: 33vw;
+    align-items: center;
+    justify-content: center;
+    
+    
+
+}
+.contenedor-foot__direccion{
+    order:1;
+    width: 33vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: beige;
+    font-size: 20px;
+
+}
+.contenedor-foot_logo {
+    order:2;
+    width: 33vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+/* MEDIA QUARIES */
+@media only screen and (max-width: 1200px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+    nav div a img {
+        height: 8vh;
+        flex-wrap: wrap;
+        margin-left: 20px;
+    }
+    nav ul {
+        
+        width: 75vw;
+        margin-right: 10px;
+        font-size: 120%;
+    }
+    main  {
+        grid-area: "main";
+        border: 1px solid   black;
+        display: grid;
+        grid-column: 1fr 1fr;
+        grid-template-rows: 0.3fr 0.8fr 0.5fr .5fr;
+        grid-template-areas: "tit tit"
+                             "sec1 sec2"
+                             "as as"
+                             "imin imin";
+        background-image: url(../assets/images/fondo_panta_inicio_amaillo.jpg);
+        background-size: contain;
+    }
+        .section1 {
+            grid-area: sec1;
+            margin-left: 50px;
+            margin-right: 25px;
+            font-size: 22px;
+            color: rgb(249, 237, 31);
+            
+            }
+        .section2 {
+            grid-area: sec2;
+            margin-right: 50px;
+            margin-left: 25px;
+            font-size: 22px;
+            color: rgb(249, 237, 31);
+            
+            
+        }
+        .aside {
+            grid-area: as;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top: 30px;
+            font-size: 21px;
+            color: white;
+            font-style: italic;
+            
+        }
+        .contenedor-foot__direccion{
+            order:1;
+            width: 33vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: beige;
+            font-size: 20px;
+            text-align: center;
+        }
+
+    }
+
+
+
+
+
+@media only screen and (max-width: 320px) {
+
+}

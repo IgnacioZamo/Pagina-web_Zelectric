@@ -665,8 +665,8 @@ font-size: 25px;
     }
 /* 768 */
 
-/* 320 */
-@media only screen and (max-width: 320px) {
+/* 400 */
+@media only screen and (max-width: 400px) {
 
     .imagenheader {
         /* margin-left: 15px; */

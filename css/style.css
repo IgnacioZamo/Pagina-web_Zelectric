@@ -251,6 +251,8 @@ footer {
     margin: 8px;
     border: 2px solid black;
     transition: 0.5s transform;
+    display: flex;
+    flex-wrap: wrap;
 }
 .imgprod:hover {
     transform: scale(1.15);

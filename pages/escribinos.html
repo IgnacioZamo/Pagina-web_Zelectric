@@ -8,51 +8,71 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-        <header class="header">
-            <nav>
-                <a href="../index.html"><img src="../assets/images/logo Zelectric BC.png" alt="logo de Zelectric en Blanco" class="header__imageninicio"></a>
+    <div class="grid-contenedor">
+        <header>
+            <nav class="nav">
+                <div class="imagenheader"><a href="../index.html"><img src="../assets/images/logo Zelectric BC.png" alt="Logo de zelectric en blanco"></a></div>
                 <ul>
-                    <li><a href="../index.html">INICIO </a></li>
-                    <li><a href="../pages/Productos.html">PRODUCTOS </a></li>
-                    <li><a href="../pages/Servicios.html">SERVICIOS </a></li>
-                    <li><a href="../pages/Quienesomos.html">QUIENES SOMOS </a></li>
-                    <li><a href="../pages/Escribinos.html">CONTACTO </a></li>
+                    <li><a href="../index.html">INICIO</a></li>
+                    <li><a href="../pages/productos.html">PRODUCTOS</a></li>
+                    <li><a href="../pages/servicios.html">SERVICIOS</a></li>
+                    <li><a href="../pages/quienesomos.html">QUIENES SOMOS</a></li>
+                    <li><a href="../pages/escribinos.html">CONTACTO</a></li>
                 </ul>
             </nav>
         </header>
-        <main class="main">
-            <main class="main__main">
-                <h1 class="main__main__titulo">¿Consultas? ¿Sugerencias? ¿Queres dejarnos tu cv? Escribinos!</h1>
-                <br><br>
+        <main id="escribinos__main">
+            <h1 class="escribinos__main__titulo">¿Consultas? ¿Sugerencias? ¿Queres dejarnos tu cv? Escribinos!</h1>
+            <div class="plancontc">
                 <fieldset>
-                    <legend>CONTACTO</legend>
-                    <div class="main__main__indiquegenero">Indique su genero: </div>
+                <legend class="escribinos__main__legend">CONTACTO</legend>
+                    <div class="escribinos__main__indiquegn">Indique su genero: </div>
                     <br>
-                    <div class="main__main__genero" !important>
+                    <div class="escribinos__main__genero">
                         <label for="esHombre">
                             <input type="radio" name="eres" value="Hombre"> Hombre
                         </label>
                     </div>
-                    <div class="main__main__genero" !important>
+                    <div class="escribinos__main__genero">
                         <label for="esMujer">
                             <input type="radio" name="eres" value="Mujer"> Mujer
                         </label>
                     </div>
                     <br><br>
-                    <div class="main__main__ingresenombre">
+                    <div class="escribinos__main__ingresenombre">
                         <label for="Nombre"> Ingrese su Nombre </label>
                         <input type="text" id="Nombre"  placeholder="Ingrese su nombre">
                     </div>
                     <br>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Dejanos tu comentario"></textarea>
+                    <div class="escribinos__main__ingresenombre">
+                        <label for="mail"> Ingrese su E-mail </label>
+                        <input type="text" id="mail"  placeholder="Ingrese su E-mail">
+                    </div>
+                    <br>
+                    <textarea name="" id="textareacont" cols="150" rows="15" placeholder="Dejanos tu comentario"></textarea>
                 </fieldset>
-                
-            </main>
+            </div>
         </main>
         <footer>
-            <h1> ZELECTRIC</h1>
-            <p>CONTACTO - FACEBOOK - INSTAGRAM - DIRECCION</p>
+            <div class="contenedor-foot">
+                <div class="contenedor-foot__iconos">
+                    <div>
+                        <a href="https://www.instagram.com/zelectric_/"><img src="../assets/images/instagrampng.png" alt="logo de instagram" class="imgfooter"></a>
+                    </div>
+                    <div>
+                        <a href="https://www.facebook.com/profile.php?id=100064090960378"><img src="../assets/images/facebookpng.png" alt="logo de facebook" class="imgfooter"a>
+                    </div>
+                    <div>   
+                        <a href="https://api.whatsapp.com/send?phone=543424212467"><img src="../assets/images/whatsapplogo.png" alt="logo whatsapp" class="imgfooter"></a>
+                    </div>
+                </div>
+                <div class="contenedor-foot__direccion">
+                    <p class="footer-contacto">Direccion: Av. Zeballos 123 || Cel: 342-155885522</p>
+                </div>
+                <div class="contenedor-foot_logo">
+                    <img src="../assets/images/logo Zelectric BC.png" alt="logo zelectric blanco" class="logofooter">
+                </div>
         </footer>
-            
+    </div>
     </body>
     </html>

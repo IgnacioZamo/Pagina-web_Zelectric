@@ -18,8 +18,9 @@ width: 100vw;
                          "footer";
 
 }
-/* HEADER */
+/* HEADER INICIO */
 header {
+    width: 100vw;
     grid-area: "header";
     background-image: url(../assets/images/fondo\ de\ pantalla\ footer.jpg);
 }
@@ -29,44 +30,59 @@ header {
     height: 15vh;
     justify-content: space-between;
     flex-wrap: wrap;
-    
+
 }
 .imagenheader {
-    width: 15vw;
+    width: 20vw;
     height: 15vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    transition: 0.2s transform linear;
+
 }
+
+.imagenheader:hover{
+    transform: rotate(360deg) scale(1.2);
+    transition: 0.5s transform ease;
+
+}
+
 nav div a img {
     height: 8vh;
     flex-wrap: wrap;
-    
+
 }
 nav ul {
+
 margin-right: 50px;
-width: 50vw;
+width: 70vw;
 display: flex;
 flex-wrap: wrap;
 align-items: center;
 align-content: center;
-justify-content: space-between;
+justify-content: space-around;
 font-size: 23px;
 
 }
 nav ul li {
+
     list-style: none;
-   
+
 }
 nav ul li a{
     text-decoration: none;
     color: rgb(249, 237, 31);
+    background-image: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(195,190,7,1) 49%, rgba(245,255,0,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
+/* HEADER FIN */
 
-
-/* MAIN */
+/* MAIN INICIO */
 main  {
+    width: 100vw;
     grid-area: "main";
     border: 1px solid   black;
     display: grid;
@@ -77,10 +93,9 @@ main  {
                          "as as"
                          "imin imin";
     background-image: url(../assets/images/fondo_panta_inicio_amaillo.jpg);
-    background-size: contain;
-    
-    
+    background-size: cover;
 }
+
 .titulo {
     grid-area: tit;
     display: flex;
@@ -90,8 +105,6 @@ main  {
     font-style: italic;
     color: rgb(249, 237, 31);
     font-size: 40px;
-    
-    
 
 }
 .section1 {
@@ -100,9 +113,6 @@ main  {
     margin-right: 25px;
     font-size: 30px;
     color: rgb(249, 237, 31);
-    
-    
-
 }
 .section2 {
     grid-area: sec2;
@@ -110,8 +120,6 @@ main  {
     margin-left: 25px;
     font-size: 30px;
     color: rgb(249, 237, 31);
-    
-    
 }
 .aside {
     grid-area: as;
@@ -122,14 +130,16 @@ main  {
     font-size: 25px;
     color: white;
     font-style: italic;
-    
+    flex-wrap: wrap;
 }
 .imginicio {
     grid-area: imin;
     width: 400px;
 }
+/* MAIN FIN */
 
-/* FOOTER */
+
+/* FOOTER INICIO */
 
 footer {
     grid-area: "footer";
@@ -152,7 +162,7 @@ footer {
     justify-items: center;
     justify-content: space-evenly;
     height: 12vh;
-    
+
 }
 .contenedor-foot__iconos {
     order:3;
@@ -161,8 +171,8 @@ footer {
     width: 33vw;
     align-items: center;
     justify-content: center;
-    
-    
+
+
 
 }
 .contenedor-foot__direccion{
@@ -181,32 +191,429 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+}
+/* FOOTER FIN */
+
+
+/* PRODUCTOS PAGES INICIO */
+
+#producto__main {
+    grid-area: main;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-column: 1fr;
+    grid-row: 1fr, 0.5fr, 1fr;
+    grid-template-areas: "titulo"
+                         "buscador"
+                         "imagen";
+}
+.titulo-producto {
+    grid-area: titulo;
+    color: white;
+    font-size: 60px;
+    font-style: italic;
+    text-decoration: underline;
+    margin-left: 30px;
 
 }
-/* MEDIA QUARIES */
+.producto__main__buscador {
+    color: white;
+    grid-area: buscador;
+    display: flex;
+    justify-content: end;
+    height: 30px;
+    margin-right: 50px;
+    font-size: 25px;
+    justify-items: center;
+
+
+}
+.producto {
+    height: 200px;
+}
+.producto__main__imgproductos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    grid-area: imagen;
+
+}
+
+#producto__main {
+    height: 100vh;
+}
+.imgprod {
+    height: 250px;
+    margin: 8px;
+    border: 2px solid black;
+    transition: 0.5s transform;
+}
+.imgprod:hover {
+    transform: scale(1.15);
+    transition: 0.5 ease;
+}
+
+
+/* PRODUCTOS PAGE FIN */
+
+/* SERVICIOS PAGE */
+
+#servicios__main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.7fr 1.3fr;
+    grid-template-areas: "titservicios titservicios"
+                         "repcel repcomp";
+    height: 90vh;
+    width: 100vw;
+
+}
+.servicios__main__cont1__titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    text-decoration: underline;
+    font-style: italic;
+    color: white;
+    height: 100px;
+}
+.servicios__main__cont1__descripcion {
+    color: rgb(232, 222, 37);
+    font-size: 35px;
+    margin-right: 50px;
+    margin-left: 50px;
+    text-align: center;
+}
+.servicios__main__cont2__titulo {
+    color: white;
+    font-size: 27px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.servicios__main__cont2__descripcion {
+    color: rgb(232, 222, 37);
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+.servicios__main__cont2__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    margin-top: 50px;
+}
+.servicios__main__cont3__titulo {
+    color: white;
+    font-size: 27px;
+    margin-right: 10px;
+    margin-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+.servicios__main__cont3__descripcion {
+    font-size: 20px;
+    color: rgb(232, 222, 37);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.servicios__main__cont3__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    height: 95%;
+}
+
+.servicios__main__cont1 {
+    grid-area: titservicios;
+}
+.servicios__main__con2 {
+    grid-area: repcel;
+}
+.servicios__main__cont3 {
+    grid-area: repcomp;
+}
+/* SERVICIOS PAGES */
+
+/* QUIENES SOMOS PAGE */
+
+#quienessomos__main {
+    grid-area: main;
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+
+}
+.quienessomos__video {
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.quienessomos__main__titulo {
+    font-style: italic;
+    font-size: 40px;
+    color: rgb(232, 222, 37);
+    text-align: center;
+}
+.quienessomos__main__texto{
+    color: white;
+    font-size: 23px;
+    text-align: center;
+    margin: 10px;
+}
+.quienessomos__main__titulo2 {
+    font-style: italic;
+    font-size: 40px;
+    color: rgb(232, 222, 37);
+    text-align: center;
+    margin: 10px;
+}
+.quienessomos__main__texto2 {
+    color: white;
+    font-size: 23px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/* QUIENES SOMOS PAGES FIN */
+
+
+/* CONTACTANOS PAGE INICIO */
+#escribinos__main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.7fr 1fr;
+    grid-template-areas: "maintit"
+                         "contact";
+    justify-content: center;
+    justify-items: center;
+
+}
+.escribinos__main__titulo{
+    grid-area: maintit;
+    color: rgb(232, 222, 37);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-style: italic;
+}
+.escribinos__main__legend {
+    color: white;
+    margin-left: 30px;
+    font-style: italic;
+    font-size: 30px;
+}
+.escribinos__main__indiquegn {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 1vw;
+    margin-top: 5px;
+    font-weight: 600;
+    font-size: 30px;
+}
+.escribinos__main__legend {
+    margin-left: 30px;
+
+}
+.escribinos__main__genero {
+color: yellow;
+font-size: 20px;
+margin-left: 1vw;
+}
+.escribinos__main__ingresenombre {
+    margin-left: 1vw;
+    width: 22vw;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 23px;
+}
+#textareacont {
+    margin-left: 1vw;
+}
+
+.plancontc {
+    grid-area: contact;
+    width: 90vw;
+}
+
+/* CONTACTANOS PAGE FIN */
+
+
+
+/* MEDIA QUARIES INICIO */
+/* 1200 */
 @media only screen and (max-width: 1200px) {
 
+    #producto__main {
+        grid-area: main;
+        height: 85vh;
+        width: 100vw;
+        display: grid;
+        grid-column: 1fr;
+        grid-row: 0.5fr, 0.5fr, 0.5fr;
+        grid-template-areas: "titulo"
+                             "buscador"
+                             "imagen";
+    }
+    .imgprod {
+        height: 20vh;
+        margin: 7px
+    }
+
+    .imagenheader:hover{
+    transform: rotate(360deg) scale(1.2);
+    transition: 0.5s transform ease;
+
+}
+    .titulo-producto {
+        grid-area: titulo;
+        color: white;
+        margin-top: 1vh;
+        font-size: 50px;
+        font-style: italic;
+        text-decoration: underline;
+        margin-left: 3vw;
+    }
+
+main  {
+        height: 100vh;
+        grid-area: "main";
+        border: 1px solid   black;
+        display: grid;
+        grid-column: 1fr 1fr;
+        grid-template-rows: 0.4fr 0.8fr 0.5fr 0.3fr;
+    grid-template-areas: "tit tit"
+                         "sec1 sec2"
+                         "as as"
+                         "imin imin";
+        background-image: url(../assets/images/fondo_panta_inicio_amaillo.jpg);
+        background-size: cover;
 }
 
+nav ul {
+margin-right: 50px;
+width: 70vw;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+align-content: center;
+justify-content: space-around;
+font-size: 25px;
+
+}
+
+.aside {
+    grid-area: as;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+    color: white;
+    font-style: italic;
+
+}
+.aside p {
+    background-color: rgba(10, 10, 10, 0.765);
+    border-radius: 15px;
+}
+.imagenheader {
+    margin-left: 15px;
+    width: 15vw;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.contenedor-foot__direccion{
+    order:1;
+    width: 33vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: beige;
+    font-size: 20px;
+    margin-left: 15px;
+    text-align: center;
+
+}
+}
+/* 1200 */
+
+/* 768 */
 @media only screen and (max-width: 768px) {
-    nav div a img {
-        height: 8vh;
-        flex-wrap: wrap;
-        margin-left: 20px;
+    #producto__main {
+        grid-area: main;
+        height: 85vh;
+        width: 100vw;
+        display: grid;
+        grid-column: 1fr;
+        grid-row: 1fr, 1fr, 1fr;
+        grid-template-areas: "titulo"
+                             "buscador"
+                             "imagen";
+    }
+    .imgprod {
+        height: 15vh;
+        margin: 7px
+    }
+    .titulo-producto {
+        grid-area: titulo;
+        color: white;
+        margin-top: 1vh;
+        font-size: 50px;
+        font-style: italic;
+        text-decoration: underline;
+        margin-left: 3vw;
+    }
+    .producto__main__buscador {
+        color: white;
+        grid-area: buscador;
+        display: flex;
+        justify-content: end;
+        height: 30px;
+        margin-right: 50px;
+        font-size: 25px;
+        justify-items: center;
+        margin-top: 5vh;
     }
     nav ul {
-        
+
         width: 75vw;
         margin-right: 10px;
-        font-size: 120%;
+        font-size: 18px;
     }
     main  {
         grid-area: "main";
         border: 1px solid   black;
         display: grid;
         grid-column: 1fr 1fr;
-        grid-template-rows: 0.3fr 0.8fr 0.5fr .5fr;
+        grid-template-rows: 0.3fr 0.8fr 0.5fr .3fr;
         grid-template-areas: "tit tit"
                              "sec1 sec2"
                              "as as"
@@ -220,7 +627,7 @@ footer {
             margin-right: 25px;
             font-size: 22px;
             color: rgb(249, 237, 31);
-            
+
             }
         .section2 {
             grid-area: sec2;
@@ -228,8 +635,8 @@ footer {
             margin-left: 25px;
             font-size: 22px;
             color: rgb(249, 237, 31);
-            
-            
+
+
         }
         .aside {
             grid-area: as;
@@ -242,7 +649,7 @@ footer {
             font-size: 21px;
             color: white;
             font-style: italic;
-            
+
         }
         .contenedor-foot__direccion{
             order:1;
@@ -256,11 +663,187 @@ footer {
         }
 
     }
+/* 768 */
 
-
-
-
-
+/* 320 */
 @media only screen and (max-width: 320px) {
 
+    .imagenheader {
+        /* margin-left: 15px; */
+        width: 15vw;
+        height: 15vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #producto__main {
+        grid-area: main;
+        height: 100vh;
+        display: grid;
+        grid-column: 1fr;
+        grid-row: 1fr, 1fr, 1fr;
+        grid-template-areas: "titulo"
+                             "buscador"
+                             "imagen";
+    }
+    .imgprod {
+        height: 10vh;
+        margin: 7px
+    }
+    .producto__main__imgproductos{
+        margin-top: 8vh;
+    }
+    .titulo-producto {
+        grid-area: titulo;
+        color: white;
+        margin-top: 1vh;
+        font-size: 5vh;
+        font-style: italic;
+        text-decoration: underline;
+        margin-left: 3vw;
+    }
+    .producto__main__buscador {
+        color: white;
+        grid-area: buscador;
+        display: flex;
+        justify-content: end;
+        height: 30px;
+        margin-right: 50px;
+        font-size: 25px;
+        justify-items: center;
+        margin-top: 5vh;
+    }
+    nav div a img {
+        height: 5vh;
+        flex-wrap: wrap;
+        margin-left: 60px;
+
+    }
+    nav ul {
+
+        width: 75vw;
+        height: 15vh;
+        margin-right: 10px;
+        font-size: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        align-content: flex-end;
+
+
+    }
+
+    main  {
+        height: 120vh;
+        width: 100vw;
+        grid-area: "main";
+        border: 1px solid   black;
+        display: grid;
+        grid-column: 1fr 1fr;
+        grid-template-rows: 0.2fr 0.3fr 0.3fr 0.3fr .1fr;
+        grid-template-areas: "tit tit"
+                             "sec1 sec1"
+                             "sec2 sec2"
+                             "as as"
+                             "imin imin";
+        background-image: url(../assets/images/fondo_panta_inicio_amaillo.jpg);
+        background-size: cover;
+
+    }
+
+    .titulo {
+        width: 98vw;
+    }
+    .section1 {
+        width: 98vw;
+        grid-area: sec1;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        font-size: 20px;
+        color: rgb(249, 237, 31);
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: center;
+        background-color: rgba(20, 20, 20, 0.665);
+
+        }
+    .section2 {
+        width: 98vw;
+        grid-area: sec2;
+        margin-top: 30px;
+        margin-right: 1vw;
+        margin-left: 1vw;
+        font-size: 20px;
+        color: rgb(249, 237, 31);
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: center;
+        background-color: rgba(20, 20, 20, 0.665);
+    }
+    .aside {
+        grid-area: as;
+        display: flex;
+        width: 98vw;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 30px;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        font-size: 21px;
+        color: white;
+        font-style: italic;
+    }
+    .imginicio {
+        grid-area: imin;
+        width: 90vw;
+    }
+
+    .contenedor-foot__iconos {
+    order:3;
+    display: flex;
+    flex-wrap: wrap;
+    width: 33vw;
+    align-items: center;
+    justify-content: center;
+
+
+    }
+    .contenedor-foot__direccion{
+    order:1;
+    width: 40vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: beige;
+    font-size: 15px;
+
 }
+.contenedor-foot_logo {
+    order:2;
+    width: 33vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.logofooter {
+    height: 30px;
+}
+
+.contenedor-foot__direccion{
+    order:1;
+    width: 33vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: beige;
+    font-size: 15px;
+}
+}
+/* 320 */

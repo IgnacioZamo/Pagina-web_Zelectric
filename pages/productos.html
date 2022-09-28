@@ -8,42 +8,58 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-        <header class="header">
-            <nav>
-                <a href="../index.html"><img src="../assets/images/logo Zelectric BC.png" alt="logo de Zelectric en Blanco" class="header__imageninicio"></a>
+    <div class="grid-contenedor">
+        <header>
+            <nav class="nav">
+                <div class="imagenheader"><a href="../index.html"><img src="../assets/images/logo Zelectric BC.png" alt="Logo de zelectric en blanco"></a></div>
                 <ul>
-                    <li><a href="../index.html">INICIO </a></li>
-                    <li><a href="../pages/Productos.html">PRODUCTOS </a></li>
-                    <li><a href="../pages/Servicios.html">SERVICIOS </a></li>
-                    <li><a href="../pages/Quienesomos.html">QUIENES SOMOS </a></li>
-                    <li><a href="../pages/Escribinos.html">CONTACTO </a></li>
+                    <li><a href="../index.html">INICIO</a></li>
+                    <li><a href="../pages/productos.html">PRODUCTOS</a></li>
+                    <li><a href="../pages/servicios.html">SERVICIOS</a></li>
+                    <li><a href="../pages/quienesomos.html">QUIENES SOMOS</a></li>
+                    <li><a href="../pages/escribinos.html">CONTACTO</a></li>
                 </ul>
             </nav>
         </header>
-        <main class="main">
-            <main class="main__main">
-                <div>
-                    <label for="Producto">Buscar Producto:</label>
-                    <input type="Producto" id="Producto" placeholder="ingrese producto a buscar">
-                    <br> <br>
-                    <img src="../assets/images/producto1.jpg" alt="producto1" class="producto">
-                    <img src="../assets/images/producto2.jpg" alt="producto2" class="producto">
-                    <img src="../assets/images/producto3.jpg" alt="producto3" class="producto">
-                    <img src="../assets/images/producto4.jpg" alt="producto4" class="producto">
-                    <img src="../assets/images/producto5.jpg" alt="producto5" class="producto">
-                    <img src="../assets/images/producto8.jpg" alt="producto8" class="producto">
-                    <img src="../assets/images/producto9.jpg" alt="producto9" class="producto">
-                    <img src="../assets/images/producto10.jpg" alt="producto10" class="producto">
-                </div>
-                <div>
-
-                </div>
-            </main>
+        <main id="producto__main">
+        <h1 class="titulo-producto">Nuestros Productos:</h1>
+        <br>
+        <div class="producto__main__buscador">
+            <label for="Producto">Buscar Producto:</label>
+            <input type="Producto" id="Producto" placeholder="ingrese producto a buscar">
+        </div>
+        <br>
+        <div class="producto__main__imgproductos">
+            <img src="../assets/images/producto1.jpg" alt="producto 1" class="imgprod">
+            <img src="../assets/images/producto2.jpg" alt="producto 2" class="imgprod">
+            <img src="../assets/images/producto3.jpg" alt="producto 3" class="imgprod">
+            <img src="../assets/images/producto4.jpg" alt="producto 4" class="imgprod">
+            <img src="../assets/images/producto5.jpg" alt="producto 5" class="imgprod">
+            <img src="../assets/images/producto8.jpg" alt="producto 8" class="imgprod">
+            <img src="../assets/images/producto9.jpg" alt="producto 9" class="imgprod">
+            
+        </div>
         </main>
         <footer>
-            <h1> ZELECTRIC</h1>
-            <p>CONTACTO - FACEBOOK - INSTAGRAM - DIRECCION</p>
+            <div class="contenedor-foot">
+                <div class="contenedor-foot__iconos">
+                    <div>
+                        <a href="https://www.instagram.com/zelectric_/"><img src="../assets/images/instagrampng.png" alt="logo de instagram" class="imgfooter"></a>
+                    </div>
+                    <div>
+                        <a href="https://www.facebook.com/profile.php?id=100064090960378"><img src="../assets/images/facebookpng.png" alt="logo de facebook" class="imgfooter"a>
+                    </div>
+                    <div>   
+                        <a href="https://api.whatsapp.com/send?phone=543424212467"><img src="../assets/images/whatsapplogo.png" alt="logo whatsapp" class="imgfooter"></a>
+                    </div>
+                </div>
+                <div class="contenedor-foot__direccion">
+                    <p class="footer-contacto">Direccion: Av. Zeballos 123 || Cel: 342-155885522</p>
+                </div>
+                <div class="contenedor-foot_logo">
+                    <img src="../assets/images/logo Zelectric BC.png" alt="logo zelectric blanco" class="logofooter">
+                </div>
         </footer>
-            
-    </body>
-    </html>
+    </div>
+</body>
+</html>

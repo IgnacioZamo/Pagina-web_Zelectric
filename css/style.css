@@ -264,7 +264,7 @@ footer {
     grid-area: main;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.7fr 1.3fr;
+    grid-template-rows: 1fr 1.3fr;
     grid-template-areas: "titservicios titservicios"
                          "repcel repcomp";
     height: 90vh;
